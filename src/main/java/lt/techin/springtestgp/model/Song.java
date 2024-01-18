@@ -1,13 +1,20 @@
 package lt.techin.springtestgp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+
 public class Song {
 
+    private long id;
+
+//    private User user;
     private  String artist;
-    private  String song;
+    private  String title;
 
     public Song(String artist, String song) {
         this.artist = artist;
-        this.song = song;
+        this.title = song;
     }
 
     public String getArtist() {
@@ -15,7 +22,7 @@ public class Song {
     }
 
     public String getSong() {
-        return song;
+        return title;
     }
 
     public void setArtist(String artist) {
@@ -23,6 +30,6 @@ public class Song {
     }
 
     public void setSong(String song) {
-        this.song = song;
+        this.title = song;
     }
 }
