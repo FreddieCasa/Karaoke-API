@@ -18,7 +18,6 @@ public class FavoritesController {
 
 
 
-
     @GetMapping
     public List<UserRecord> getAllRecords(@RequestParam String id) {
         return repository.findAll();
@@ -34,9 +33,10 @@ public class FavoritesController {
 
     @PostMapping
     public void editRecord(
-            @RequestBody UserRecord authorRecord
+            @RequestParam String id,
+            @RequestBody UserRecord userRecord
     ) {
-        repository.save(authorRecord);
+        repository.save(userRecord);
     }
 
 }

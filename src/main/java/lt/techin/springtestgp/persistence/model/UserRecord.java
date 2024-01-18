@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,7 +20,5 @@ public class UserRecord {
 
     private String userName;
 
-    private String artist;
 
-    private String title;
 }
